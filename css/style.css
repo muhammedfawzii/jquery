@@ -1,0 +1,146 @@
+:root{
+    scroll-behavior: auto !important;
+}
+
+body{
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: #333333c8;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #111;
+    border-radius: 10px;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.7s;
+}
+aside{
+    padding: 20px;
+    width: 0; 
+    margin-left: -150px;
+}
+a:hover{
+    color: rgba(214, 46, 51, 1);
+}
+#closeBtn{
+    transition: all 0.6s;
+}
+#closeBtn:hover{
+    transform: scaleX(1.1);
+    color: rgba(214, 46, 51, 1);
+}
+aside .container i {
+    cursor: pointer;
+    font-size: 20px;
+}
+#open{
+    position: fixed;
+    top: 60%;
+    color: black !important;
+    font-weight: 600;
+    /* background-color: blue; */
+    cursor: pointer;
+    z-index: 999;
+    left: 0;
+    color: white;
+    font-size: 19px;
+}
+header{
+    background-image: linear-gradient(#9c2d2fce, #9c2d2fdb) , url(../imgs/imgs/07698cf0-ca7b-4b1e-8dd9-cb704fcb605c.jfif);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    letter-spacing: 2px;
+}
+#about{
+    background-color: #E68285;
+}
+#about h2{
+    cursor: pointer;
+}
+#about p {
+    background-color: #ccc;
+}
+#about .hide{
+    display: none;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    display: block;
+    position: relative;
+    height: 12px;
+    width: 50%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .loader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #FF3D00;
+    animation: 6s prog ease-in infinite;
+  }
+  
+  @keyframes prog {
+    to  {   width: 100%;}
+  }
+
+  #duration{
+    background-image: linear-gradient(#9c2d2fce, #9c2d2fdb), url(../imgs/imgs/326931b4-0737-4dd4-8f15-d3f714288c6f.jfif);
+    background-position: center center;
+    background-size: cover;
+    
+  }
+  #duration p{
+    border: 1px solid white;
+    color: white;
+    margin-inline: 10px;
+    padding: 40px;
+    font-size: 23px;
+    text-align: center;
+    
+  }
+  #contact{
+    background-color: #330033;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='2.3'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='14'/%3E%3Ccircle cx='539' cy='269' r='14'/%3E%3Ccircle cx='603' cy='493' r='14'/%3E%3Ccircle cx='731' cy='737' r='14'/%3E%3Ccircle cx='520' cy='660' r='14'/%3E%3Ccircle cx='309' cy='538' r='14'/%3E%3Ccircle cx='295' cy='764' r='14'/%3E%3Ccircle cx='40' cy='599' r='14'/%3E%3Ccircle cx='102' cy='382' r='14'/%3E%3Ccircle cx='127' cy='80' r='14'/%3E%3Ccircle cx='370' cy='105' r='14'/%3E%3Ccircle cx='578' cy='42' r='14'/%3E%3Ccircle cx='237' cy='261' r='14'/%3E%3Ccircle cx='390' cy='382' r='14'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  #contact .icons span{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #contact .icons span i{
+    font-weight: 600 !important;
+    color: rgba(0, 0, 0, 0.811);
+  }
